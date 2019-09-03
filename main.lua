@@ -1,7 +1,7 @@
 package.path = package.path .. ';' .. love.filesystem.getSource() .. '/lua_modules/share/lua/5.1/?.lua'
 package.cpath = package.cpath .. ';' .. love.filesystem.getSource() .. '/lua_modules/share/lua/5.1/?.so'
 
-local monolith = require("monolith.core").new({ledColorBits=2})
+local monolith = require("monolith.core").new({ledColorBits=3})
 local shutdownkey = require("util.shutdownkey"):new(monolith.input)
 
 local musicSystem
